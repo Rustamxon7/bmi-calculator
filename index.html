@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <title>BMI calculator</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header__bmi">
+        <div class="bmi__title">BMI</div>
+        <div class="header__top">
+          <div class="bmi__btns">
+            <button class="bmi__btn" type="button" id="weight--btn">
+              WEIGHT
+            </button>
+            <button class="bmi__btn" type="button" id="height--btn">
+              HEIGHT
+            </button>
+          </div>
+
+          <div class="bmi__result">
+            <div class="bmi__item">
+              <p class="bmi__inner" id="weight--display">75.50</p>
+              <p class="bmi__text">Kilogram</p>
+            </div>
+            <div class="bmi__item">
+              <p class="bmi__inner" id="height--display">69.00</p>
+              <p class="bmi__text">Meter</p>
+            </div>
+          </div>
+        </div>
+
+        <span class="bmi__border"></span>
+
+        <div class="header__bottom hidden" id="number--pad">
+          <div class="number__btns">
+            <button type="button" class="cal__btn item-7">7</button>
+            <button type="button" class="cal__btn item-8">8</button>
+            <button type="button" class="cal__btn item-3">9</button>
+            <button type="button" class="cal__btn item-4">4</button>
+            <button type="button" class="cal__btn item-5">5</button>
+            <button type="button" class="cal__btn item-6">6</button>
+
+            <button type="button" class="cal__btn item-1">1</button>
+            <button type="button" class="cal__btn item-2">2</button>
+            <button type="button" class="cal__btn item-3">3</button>
+            <button type="button" class="cal__btn item-0">0</button>
+            <button type="button" class="cal__btn item-dot" id="DOT">.</button>
+          </div>
+          <div class="functional__btns">
+            <button type="button" class="func-btn item-ac" id="AC">AC</button>
+            <button type="button" class="func-btn item-clear" id="CLEAR">
+              <span class="material-symbols-outlined"> backspace </span>
+            </button>
+            <button type="button" class="func-btn item-go" id="GO">GO</button>
+          </div>
+        </div>
+
+        <div class="bmi__main-result" id="result--bar">
+          <div class="bmi__result-item">
+            <div class="result__display">
+              <h1 id="mainResult">31.1</h1>
+              <p>
+                <span class="bmi__span">BMI </span>
+                <br />
+                overweight
+              </p>
+            </div>
+            <div class="display__sub">
+              <div class="underweight">
+                <p>underweight</p>
+                <div class="underliine"></div>
+              </div>
+              <div class="normal">
+                <p>normal</p>
+                <div class="normalliine"></div>
+              </div>
+              <div class="overweight">
+                <p>overweight</p>
+                <div class="overliine"></div>
+              </div>
+            </div>
+            <p class="sub__item">16.0 18.5 25.0 40.0</p>
+          </div>
+
+          <button class="cal__btn" id="clean">⬅</button>
+        </div>
+      </div>
+      <!-- <div class="header__bmi right">
+        <div class="bmi__title">BMI</div>
+        <div class="header__top">
+          <div class="bmi__weight">
+            <button class="weight" type="button">WEIGHT</button>
+            <button class="weight" type="button">HEIGHT</button>
+          </div>
+
+          <div class="bmi__height">
+            <div class="bmi__item1">
+              <p class="bmi__inner" id="weightResult">75.50</p>
+              <p class="bmi__text">kilogramm</p>
+            </div>
+            <div class="bmi__item">
+              <p class="bmi__inner" id="heightResult">69.00</p>
+              <p class="bmi__text">meter</p>
+            </div>
+          </div>
+        </div>
+        <div class="bmi__border"></div>
+        <div class="bmi__right-inner">
+          <div class="bmi__right-item">
+            <div class="right__display">
+              <h1 id="mainResult">31.1</h1>
+              <p><span class="bmi__span">BMI </span> overweight</p>
+            </div>
+            <div class="display__sub">
+              <div class="underweight">
+                <p>underweight</p>
+                <div class="underliine"></div>
+              </div>
+              <div class="normal">
+                <p>normal</p>
+                <div class="normalliine"></div>
+              </div>
+              <div class="overweight">
+                <p>overweight</p>
+                <div class="overliine"></div>
+              </div>
+            </div>
+            <p class="sub__item">16.0 18.5 25.0 40.0</p>
+          </div>
+        </div>
+      </div> -->
+    </div>
+
+    <script src="/vazifa.js"></script>
+  </body>
+</html>
