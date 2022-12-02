@@ -18,8 +18,7 @@ const CLEAN = document.getElementById('clean');
 
 ///////////////////////////
 // RESULT
-// const weightResult = document.getElementById('weightResult');
-// const heightResult = document.getElementById('heightResult');
+
 const mainResult = document.getElementById('mainResult');
 
 let rostamanOgrlikmi = true;
@@ -77,14 +76,6 @@ heightBtn.addEventListener('click', () => {
   resultBar.classList.add('hidden');
 });
 
-// shift, pop, push, unshift
-
-// const array = [1, 2, 5];
-
-// array.shift();
-
-// console.log(array);
-
 AC.addEventListener('click', () => {
   console.log(weightArray, weightDisplay.textContent);
   weightArray = [];
@@ -120,10 +111,6 @@ GO.addEventListener('click', () => {
 
   const calcBMI = weight / height ** 2;
 
-  // weightResult.textContent = weightDisplay.textContent;
-
-  // heightResult.textContent = heightDispaly.textContent;
-
   mainResult.textContent = calcBMI.toFixed(1);
   console.log(weight, height);
   console.log(calcBMI);
@@ -139,5 +126,5 @@ CLEAN.addEventListener('click', () => {
 
   weightDisplay.textContent = '0';
   heightDispaly.textContent = '0';
-  mainResult.textContent = '0'
+  mainResult.textContent = '0';
 });
