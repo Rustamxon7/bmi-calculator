@@ -36,14 +36,14 @@ for (let btn = 0; btn < buttons.length; btn++) {
     if (rostamanOgrlikmi) {
       // biz arrayga element qo'shyapmiz
 
-      if (notThisButtons) {
+      if (notThisButtons && weightArray.length <= 3) {
         weightArray.push(buttons[btn].textContent);
-        // biz bu yerda weightDisplayga elementlarni tenglayapmniz (yoki chiqaryapmiz)
+
         weightDisplay.textContent = weightArray.join('');
       }
     } else {
       // agar bosgan tugmamiz AC, CLEAR yoki GO ga teng bolmasa menga elemenlarni display qilaver
-      if (notThisButtons) {
+      if (notThisButtons && heightArray.length <= 3) {
         heightArray.push(buttons[btn].textContent);
         heightDispaly.textContent = heightArray.join('');
       }
@@ -73,12 +73,12 @@ const clearAll = () => {
 };
 
 const clearByOne = (array, display) => {
-  if (array.length <= 1) {
+  array.pop();
+  // ['7','7','7','7']
+  display.textContent = array.join(''); // [] = ''
+
+  if (array.length === 0) {
     display.textContent = '0';
-    array = [];
-  } else {
-    array.pop();
-    display.textContent = array.join('');
   }
 };
 
